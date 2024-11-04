@@ -1,0 +1,44 @@
+:root {
+  --primary: #406f73;
+  --secondary: #79d1d9;
+  --neutral: #d2a4b0;
+  --accent: #ffdce5;
+}
+
+
+.heros-images {
+  background-color: red;
+  height: 100%;
+  width: 50%;
+
+  /* grid-area: hero-images; */
+}
+
+.heros-main {
+  background-color: aqua;
+  width: 50%;
+  /* grid-area: hero-main; */
+}
+
+.about-wrapper {
+  gap: 2rem;
+}
+.hero-button {
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.about-desc {
+  text-align: justify;
+}
+
+.contact-button {
+  width: 75%;
+  background: linear-gradient(to bottom, var(--neutral), var(--accent));
+  color: white;
+}
+
+@media screen and (min-width: 760px) {
+  .about-wrapper {
+    gap: 10rem;
+  }
+}
