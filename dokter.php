@@ -125,8 +125,8 @@ if (isset($_SESSION['user'])) {
                     <td><?php echo $data['no_hp'] ?></td>
                     <td><?php echo $data['ijin'] ?></td>
                     <td>
-                        <a class="btn btn-success rounded-pill px-3" href="index.php?page=dokter&id=<?php echo $data['id'] ?>">Ubah</a>
-                        <a class="btn btn-danger rounded-pill px-3" href="index.php?page=dokter&id=<?php echo $data['id'] ?>&aksi=hapus">Hapus </a>
+                        <a class="btn btn-success rounded-pill px-2 px-md-3" href="index.php?page=dokter&id=<?php echo $data['id'] ?>">Ubah</a>
+                        <a class="btn btn-danger rounded-pill px-2 px-md-3 " href="index.php?page=dokter&id=<?php echo $data['id'] ?>&aksi=hapus">Hapus </a>
                     </td>
                 </tr>
             <?php

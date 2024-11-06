@@ -88,14 +88,14 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
         if (isset($_GET['page'])) {
             include($_GET['page'] . ".php");
         } else { ?>
-            <div class="content px-4 mt-3 ms-3 me-3 shadow-lg vh-100">
+            <div class="content  px-4 mt-3 ms-3 me-3 shadow-lg vh-100">
                 <!-- start header -->
-                <section class="header d-flex justify-content-between align-content-center ">
-                    <div class="title">
+                <section class="header d-flex flex-column flex-md-row justify-content-between align-content-center ">
+                    <div class="title d-none d-md-block">
                         <h1 class="halaman">Dashboard</h1>
                         <p class="keterangan mt-2">This Report Last Update <?php echo date('F j, Y'); ?></p>
                     </div>
-                    <div class="pengguna text-center mt-0">
+                    <div class="pengguna text-center mt-2 mt-md-0">
                         <h1>Welcome</h1>
                         <?php
                         // Ambil jam saat ini
@@ -122,7 +122,7 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
                 <section class="main px-3 mt-4">
                     <div class="row gap-5">
                         <!-- start dokter -->
-                        <div class="col-4 p-3 bg-secondary shadow-lg border border-dark">
+                        <div class="col-12 col-md-4 p-3 bg-secondary shadow-lg border border-dark">
                             <div class="judul d-flex justify-content-between align-content-center">
                                 <h3>Dokter Yang Tersedia Hari Ini</h3>
                                 <i class="bi bi-person-fill fs-3"></i>
@@ -161,7 +161,7 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
                         <!-- end dokter -->
 
                         <!-- start pasien -->
-                        <div class="col-4 p-3 bg-success shadow-lg border border-dark">
+                        <div class="col-12 col-md-4 p-3 bg-success shadow-lg border border-dark">
                             <div class="judul d-flex justify-content-between align-content-center">
                                 <h3>Daftar Pasien Yang Periksa Hari Ini</h3>
                                 <i class="bi bi-bandaid-fill fs-3"></i>
@@ -222,7 +222,7 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
                             $errorMessage = "Failed to fetch weather data.";
                         }
                         ?>
-                        <div class="col-3 p-3 bg-info shadow-lg border border-dark">
+                        <div class="col-12 col-md-3 p-3 bg-info shadow-lg border border-dark">
                             <div class="judul d-flex justify-content-between align-content-center">
                                 <h3>Cuaca Hari Ini</h3>
                                 <i class="bi bi-cloud-fill fs-3 text"></i>
@@ -252,7 +252,7 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
                 <!-- start bawah -->
                 <section class="bawah px-4 mt-5">
                     <div class="row gap-5 ">
-                        <div class="col-7 p-1 border border-dark p-2">
+                        <div class="col-12 col-md-7 p-1 border border-dark p-2">
                             <div class="header bg-secondary p-2">
                                 <h3>Jadwal Periksa Hari ini </h3>
                             </div>
@@ -288,7 +288,7 @@ if (!isset($_SESSION['user']) && !in_array($page, $publicPages)) {
                             </table>
                         </div>
 
-                        <div class="col-4 p-4 bg-warning shadow-lg border border-dark">
+                        <div class="col-12 col-md-4 p-4 bg-warning shadow-lg border border-dark">
                             <div class="judul d-flex justify-content-between align-content-center">
                                 <h3>Daftar Obat Periksa Hari Ini</h3>
                                 <i class="bi bi-prescription2 fs-3"></i>

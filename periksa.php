@@ -170,8 +170,8 @@ if (isset($_SESSION['user'])) {
                     <td><?php echo $data['catatan'] ?></td>
                     <td><?php echo $data['obat'] ?></td>
                     <td>
-                        <a class="btn btn-success rounded-pill px-3" href="index.php?page=periksa&id=<?php echo $data['id'] ?>">Ubah</a>
-                        <a class="btn btn-danger rounded-pill px-3" href="index.php?page=periksa&id=<?php echo $data['id'] ?>&aksi=hapus">Hapus </a>
+                        <a class="btn btn-success rounded-pill px-2 px-md-3" href="index.php?page=periksa&id=<?php echo $data['id'] ?>">Ubah</a>
+                        <a class="btn btn-danger rounded-pill px-2 px-md-3 mt-md-0 mt-2" href="index.php?page=periksa&id=<?php echo $data['id'] ?>&aksi=hapus">Hapus </a>
                     </td>
                 </tr>
             <?php
